@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #0f172a;
+  background: #ffffff;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5 { font-family: 'Plus Jakarta Sans', sans-serif; }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #f1f5f9; }
+::-webkit-scrollbar-thumb { background: #8D054F; border-radius: 3px; }
+
+/* ── Keyframes ───────────────────────────────────────────── */
+@keyframes heroSlideUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes heroFadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-10px); }
+}
+
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-6px); }
+}
+
+@keyframes shimmerSlide {
+  0%   { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideBar {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+
+/* ── Hero entrance (above-the-fold, CSS-only) ───────────── */
+.hero-animate {
+  animation: heroSlideUp 0.75s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.hero-fade {
+  animation: heroFadeIn 0.75s ease both;
+}
+
+/* ── Continuous floating (for badges/cards) ─────────────── */
+.float-badge      { animation: float     3.5s ease-in-out infinite; }
+.float-badge-slow { animation: floatSlow 4.8s ease-in-out infinite; }
+
+/* ── Shimmer text gradient ──────────────────────────────── */
+.shimmer-text {
+  background: linear-gradient(90deg, #8D054F, #c2075f, #F59E0B, #8D054F);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmerSlide 4s linear infinite;
+}
+
+/* ── Infinite marquee ───────────────────────────────────── */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.marquee-track {
+  animation: marquee 22s linear infinite;
+}
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+/* ── Stagger delay utilities ─────────────────────────────── */
+.delay-75  { transition-delay:  75ms !important; }
+.delay-100 { transition-delay: 100ms !important; }
+.delay-150 { transition-delay: 150ms !important; }
+.delay-200 { transition-delay: 200ms !important; }
+.delay-300 { transition-delay: 300ms !important; }
+.delay-400 { transition-delay: 400ms !important; }
+.delay-500 { transition-delay: 500ms !important; }
+.delay-600 { transition-delay: 600ms !important; }
+.delay-700 { transition-delay: 700ms !important; }
+
+@layer utilities {
+  .brand-red { color: #8D054F; }
+  .brand-green { color: #22C55E; }
+  .brand-yellow { color: #F59E0B; }
+  .bg-brand-red { background-color: #8D054F; }
+  .bg-brand-green { background-color: #22C55E; }
+  .bg-brand-yellow { background-color: #F59E0B; }
+}
