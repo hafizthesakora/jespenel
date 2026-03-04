@@ -96,7 +96,7 @@ function Hero() {
           <div className="relative w-full max-w-[540px]">
 
             <img
-              src="/images/hero.png"
+              src="/images/hero.jpg"
               alt="Offshore engineering operations"
               style={{ aspectRatio: '4/3', width: '100%', objectFit: 'cover', borderRadius: '1rem' }}
             />
@@ -371,9 +371,9 @@ function OurWork() {
         {/* Top row — 3 equal images */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 mb-5">
           {[
-            { label: 'NDT Inspection', src: '/images/work-ndt.png' },
-            { label: 'Welding & Fabrication', src: '/images/work-welding.png' },
-            { label: 'Scaffolding & Access', src: '/images/work-scaffolding.png' },
+            { label: 'NDT Inspection', src: '/images/work-ndt.jpg' },
+            { label: 'Welding & Fabrication', src: '/images/work-welding.jpg' },
+            { label: 'Scaffolding & Access', src: '/images/work-scaffolding.jpg' },
           ].map((img, i) => (
             <AnimateIn key={img.label} animation="fade-up" delay={i * 80}>
               <img src={img.src} alt={img.label} style={{ aspectRatio: '4/3', width: '100%', objectFit: 'cover', borderRadius: '1rem' }} />
@@ -384,8 +384,8 @@ function OurWork() {
         {/* Bottom row — 2 wider images */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
           {[
-            { label: 'Protective Coatings & Blasting', src: '/images/work-coatings.png' },
-            { label: 'Offshore Crew & Operations', src: '/images/work-crew.png' },
+            { label: 'Protective Coatings & Blasting', src: '/images/work-coatings.jpg' },
+            { label: 'Offshore Crew & Operations', src: '/images/work-crew.jpg' },
           ].map((img, i) => (
             <AnimateIn key={img.label} animation="fade-up" delay={i * 100}>
               <img src={img.src} alt={img.label} style={{ aspectRatio: '16/8', width: '100%', objectFit: 'cover', borderRadius: '1rem' }} />
@@ -480,7 +480,7 @@ function Philosophy() {
             {/* Left: image + gradient overlay */}
             <div className="lg:w-2/5 relative overflow-hidden flex flex-col justify-end">
               <img
-                src="/images/philosophy.png"
+                src="/images/philosophy.jpg"
                 alt="Jespenel team on site"
                 style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }}
               />

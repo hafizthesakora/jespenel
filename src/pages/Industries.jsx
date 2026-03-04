@@ -35,7 +35,7 @@ const SECTORS = [
     bg: '#fdf2f8',
     tagline: 'Upstream, Midstream & Downstream',
     imageHint: 'Offshore platform, drilling rig, pipeline, or oil & gas facility — Jespenel crew at work',
-    imageSrc: '/images/industry-oil-gas.png',
+    imageSrc: '/images/industry-oil-gas.jpg',
     description: 'Operating at the heart of Ghana\'s growing oil & gas sector, we provide critical inspection, access, and fabrication services to upstream producers, midstream operators, and downstream facilities across the Jubilee, TEN, and Sankofa fields and beyond.',
     services: [
       'Non-destructive testing of pipelines & pressure vessels',
@@ -55,7 +55,7 @@ const SECTORS = [
     bg: '#f0fdf4',
     tagline: 'Offshore & Marine Support',
     imageHint: 'Marine vessel, FPSO unit, offshore support ship, or crew at an offshore worksite',
-    imageSrc: '/images/industry-marine.png',
+    imageSrc: '/images/industry-marine.jpg',
     description: 'With Sekondi-Takoradi as our home — Ghana\'s primary offshore logistics hub — we are ideally positioned to support marine vessels, FPSO units, and offshore infrastructure with fast, reliable engineering services.',
     services: [
       'Marine vessel inspection & structural assessment',
@@ -75,7 +75,7 @@ const SECTORS = [
     bg: '#fffbeb',
     tagline: 'Civil & Industrial Construction',
     imageHint: 'Construction site, structural steel erection, scaffolding, or heavy equipment at a Jespenel job site',
-    imageSrc: '/images/industry-construction.png',
+    imageSrc: '/images/industry-construction.jpg',
     description: 'Supporting major construction contractors operating across Ghana and West Africa, we provide welding, inspection, access, and specialist labour services for large-scale civil, industrial, and infrastructure projects.',
     services: [
       'Structural steel fabrication & erection',
@@ -95,7 +95,7 @@ const SECTORS = [
     bg: '#fdf2f8',
     tagline: 'Power Generation & Utilities',
     imageHint: 'Power plant, turbines, boiler systems, or energy infrastructure — inspection or maintenance crew at work',
-    imageSrc: '/images/industry-power.png',
+    imageSrc: '/images/industry-power.jpg',
     description: 'From thermal power plants to emerging renewable energy installations, we provide the inspection, fabrication, and access expertise that keeps Ghana\'s power infrastructure operating safely and reliably — minimising downtime and maximising asset life.',
     services: [
       'NDT inspection of turbines, boilers & pressure systems',
