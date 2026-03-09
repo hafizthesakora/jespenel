@@ -122,6 +122,37 @@ const CATEGORIES = [
     ],
   },
   {
+    id: 'firefighting',
+    label: 'Firefighting Services',
+    emoji: '🔥',
+    accent: '#EF4444',
+    bg: '#fef2f2',
+    tagline: 'Protect. Respond. Recover.',
+    description: 'We provide comprehensive firefighting support services for industrial, offshore, and onshore facilities — from fire protection system maintenance to emergency response training and equipment supply.',
+    services: [
+      {
+        title: 'Fire Protection System Maintenance',
+        duration: 'Per maintenance schedule',
+        items: ['Fire suppression system inspection', 'Sprinkler & deluge system testing', 'Fire hydrant & hose reel servicing', 'Fire alarm & detection system checks'],
+      },
+      {
+        title: 'Fire Fighting Equipment Supply',
+        duration: 'On demand',
+        items: ['Portable fire extinguishers (all types)', 'Fire hoses, nozzles & couplings', 'Personal protective firefighting gear', 'Foam concentrate & suppression agents'],
+      },
+      {
+        title: 'Emergency Response Training',
+        duration: 'Per training schedule',
+        items: ['Industrial fire warden training', 'Practical firefighting drills', 'Hazardous material fire response', 'Evacuation planning & procedures'],
+      },
+      {
+        title: 'Fire Risk Assessment',
+        duration: 'Project-based',
+        items: ['Site fire hazard identification', 'Risk-based fire safety planning', 'Compliance with fire safety regulations', 'Emergency response plan development'],
+      },
+    ],
+  },
+  {
     id: 'supply',
     label: 'Asset Management & Supply',
     emoji: '📦',
@@ -146,7 +177,7 @@ const CATEGORIES = [
         items: ['Skilled tradespeople (welders, riggers, inspectors)', 'Semi-skilled site operatives', 'Offshore & onshore deployment', 'Verified competency records'],
       },
       {
-        title: 'Supply Chain & MRO',
+        title: 'Supply Chain & Maintenance, Repair & Operations (MRO)',
         duration: 'On demand',
         items: ['PPE & safety equipment supply', 'Welding consumables & materials', 'Inspection tools & equipment', 'Spare parts & MRO procurement'],
       },

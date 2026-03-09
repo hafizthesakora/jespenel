@@ -152,12 +152,14 @@ function Hero() {
               ['🧪', 'NDT Inspection', '#22C55E', '#f0fdf4'],
               ['🔧', 'Welding & Fabrication', '#F59E0B', '#fffbeb'],
               ['🪜', 'Scaffolding & Access', '#8D054F', '#fdf2f8'],
+              ['🔥', 'Firefighting Services', '#EF4444', '#fef2f2'],
               ['🛡️', 'Asset Management', '#22C55E', '#f0fdf4'],
               ['📦', 'Supply & Labour', '#F59E0B', '#fffbeb'],
               ['🔍', 'Lifting & Rigging Inspection', '#8D054F', '#fdf2f8'],
               ['🧪', 'NDT Inspection', '#22C55E', '#f0fdf4'],
               ['🔧', 'Welding & Fabrication', '#F59E0B', '#fffbeb'],
               ['🪜', 'Scaffolding & Access', '#8D054F', '#fdf2f8'],
+              ['🔥', 'Firefighting Services', '#EF4444', '#fef2f2'],
               ['🛡️', 'Asset Management', '#22C55E', '#f0fdf4'],
               ['📦', 'Supply & Labour', '#F59E0B', '#fffbeb'],
             ].map(([emoji, label, color, bg], i) => (
@@ -188,6 +190,7 @@ function Hero() {
               { name: 'CEN Power', logo: '/images/cen-logo.jpeg' },
               { name: 'FlatC Marine', logo: '/images/flatc-logo.jpeg' },
               { name: 'Goenergy', logo: '/images/go-energy-logo.jpeg' },
+              { name: 'Asante Gold Bibiani Ltd', logo: '/images/asante-gold-logo.jpg' },
               { name: 'TAQA', logo: '/images/taqa-logo.png' },
               { name: 'WBHO', logo: '/images/wbho-logo.jpeg' },
               { name: 'STRABAG SE', logo: '/images/strabag-logo.png' },
@@ -195,6 +198,7 @@ function Hero() {
               { name: 'CEN Power', logo: '/images/cen-logo.jpeg' },
               { name: 'FlatC Marine', logo: '/images/flatc-logo.jpeg' },
               { name: 'Goenergy', logo: '/images/go-energy-logo.jpeg' },
+              { name: 'Asante Gold Bibiani Ltd', logo: '/images/asante-gold-logo.jpg' },
             ].map((c, i) => (
               <div key={i} className="flex items-center justify-center shrink-0 bg-white rounded-xl px-4 py-2"
                 style={{ height: 52, minWidth: 110, boxShadow: '0 1px 6px rgba(0,0,0,0.06)', border: '1px solid #f1f5f9' }}>
@@ -416,6 +420,7 @@ function Clients() {
     { name: 'CEN Power', sector: 'Power Generation', accent: '#22C55E', bg: '#f0fdf4', initial: 'C', logo: '/images/cen-logo.jpeg' },
     { name: 'FlatC Marine', sector: 'Marine Offshore', accent: '#F59E0B', bg: '#fffbeb', initial: 'F', logo: '/images/flatc-logo.jpeg' },
     { name: 'Goenergy', sector: 'Quality Fuels', accent: '#8D054F', bg: '#fdf2f8', initial: 'G', logo: '/images/go-energy-logo.jpeg' },
+    { name: 'Asante Gold Bibiani Ltd', sector: 'Gold Mining', accent: '#F59E0B', bg: '#fffbeb', initial: 'A', logo: '/images/asante-gold-logo.jpg' },
   ]
 
   return (

@@ -16,6 +16,7 @@ const COLS = [
       { label: 'Inspection & NDT', to: '/services' },
       { label: 'Welding & Fabrication', to: '/services' },
       { label: 'Access Solutions', to: '/services' },
+      { label: 'Firefighting Services', to: '/services' },
       { label: 'Supply & Labour', to: '/services' },
     ],
   },
@@ -56,8 +57,8 @@ export default function Footer() {
             </p>
             {/* Contact quick info */}
             <div className="flex flex-col gap-2 text-[13px]" style={{ color: 'rgba(255,255,255,0.45)' }}>
-              <span>📞 +233 59 787 1855</span>
-              <span>✉️ jespenelghltd@gmail.com</span>
+              <a href="tel:+233597871855" className="hover:text-white transition-colors">📞 +233 59 787 1855</a>
+              <a href="mailto:jespenelghltd@gmail.com" className="hover:text-white transition-colors">✉️ jespenelghltd@gmail.com</a>
               <span>📍 Sekondi-Takoradi, Ghana</span>
             </div>
             <div className="flex gap-2.5">
